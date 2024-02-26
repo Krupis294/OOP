@@ -32,3 +32,4 @@
 *.app
 cv-01/.vscode/tasks.json
 cv-01/.vscode/c_cpp_properties.json
+cv-01/.vscode/settings.json
