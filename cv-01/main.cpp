@@ -1,9 +1,11 @@
 #include "database.h"
 
 int main() {
-    // Output "Hello, World!" to the console
-    int x;
-    cin >> x;
-    cout << "Hello, World!"<< x << endl;
+    Email e("jakub.leng@seznam.cz","petr.novak@gmail.com","Ahoj Petre ...");
+    Person p("Jakub",22,183);
+    Documents d("main","cpp",50);
+    cout << "Email od:" << e.ShowFrom() << endl << "pro:" << e.ShowTo()<<endl << "obsah:" << e.ShowMessage() << endl;
+    cout << "Jmeno Vlastnika emailu:" << p.ShowName() << endl << "Vek:" << p.ShowAge() << endl << "Vyska:" << p.ShowHeight() << endl;
+    cout << "Dokument:" << d.ShowName() << "." << d.ShowSuffix() << " ma " << d.ShowPages() << " kB" << endl;
     return 0;
 }
